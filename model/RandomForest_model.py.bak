@@ -1,0 +1,104 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat May 29 11:39:55 2021
+
+@author: Aishwarya
+"""
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.metrics import confusion_matrix
+from sklearn import preprocessing
+import pickle
+
+
+data1=pd.read_csv("D:\\4 BE sem1 prac\\BE Project\\diabetes_dataset.csv")
+
+def preprocess(data , notest = True):
+    le = preprocessing.LabelEncoder() 
+    ledata =  le.fit_transform(data['Gender'])
+    data['Gender'] = ledata
+    
+    cat_data=data.select_dtypes(include='object')
+    for c in cat_data.columns:
+        data[c].replace('no',0,inplace=True) 
+        data[c].replace('yes',1,inplace=True)
+        
+    data['PhysicallyActive'].replace(to_replace=["none","less than half an hr",
+    "more than half an hr","one hr or more"], value=[4,3,2,1], inplace=True)
+    data['PhysicallyActive'] = pd.to_numeric(data['PhysicallyActive'])
+    
+    data['JunkFood'].replace(to_replace=["always","very often",
+    "often","occasionally"], value=[4,3,2,1], inplace=True)
+    data['JunkFood'] = pd.to_numeric(data['JunkFood'])
+    
+    data['Stress'].replace(to_replace=["always","very often",
+    "sometimes","not at all"], value=[4,3,2,1], inplace=True)
+    data['Stress'] = pd.to_numeric(data['Stress'])
+    
+    avg=data['BMI'].mean()
+    data['BMI'].replace(np.NaN,avg,inplace=True)
+    data['Pregancies'].replace(np.NaN,0,inplace=True)
+    data['Pregancies'] = pd.to_numeric(data['Pregancies'])
+    
+    data['BPLevel'].replace({'High':'high','Low':'low','Normal':'normal','normal ': 'normal'}, inplace=True)
+    
+    data['BPLevel'].replace(to_replace=["high",'normal',"low"], value=[1,2,3], inplace=True)
+    data['BPLevel'] = pd.to_numeric(data['BPLevel'])
+    data['UriationFreq'].replace('not much',1,inplace=True)
+    data['UriationFreq'].replace('quite often',0,inplace=True)
+    
+    
+    data['Age'].replace({'less than 40':1,'40-49':2,'50-59':3,'60 or older':4}, inplace=True)
+    
+   
+    del data['Pdiabetes']
+    del data['highBP']
+    del data['SoundSleep']
+    
+    if(notest) :
+        data['Diabetic'].replace(' no',0,inplace=True) 
+   
+    data['RegularMedicine'].replace('o',0,inplace=True) 
+    data = data.dropna()
+   
+    return data 
+    
+
+def scaler_(data) :  
+    scaler=MinMaxScaler()
+    Y=data['Diabetic']
+    
+    data = data.drop(['Diabetic'],axis =1)
+    s_data=scaler.fit_transform(data)
+    
+    c_data=pd.DataFrame(data=s_data)
+    
+    X=s_data
+    
+    x_train,x_test,y_train,y_test = train_test_split(X,Y,test_size=0.30,random_state=5)
+    
+    return scaler , x_train , x_test , y_train , y_test
+
+ 
+def randomforest(x_train,x_test,y_train,y_test):
+    forest = RandomForestClassifier(n_estimators = 10, random_state = 7) 
+    forest.fit(x_train, y_train)
+  
+
+   
+    
+
+    #Write the trained model to pickle file
+    with open(r"F:\PythonRun\Diabetic_Intake\3rd\trained_model.pickle","wb") as f:
+        pickle.dump(forest, f)
+    
+preprocessed_Data = preprocess(data1)
+
+scaler , x_train,x_test,y_train,y_test = scaler_(preprocessed_Data)
+randomforest(x_train,x_test,y_train,y_test)
