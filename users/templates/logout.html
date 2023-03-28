@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGGED OUT</title>
+        <style>
+            body {
+                height: 700px;
+                background-image: linear-gradient(rgb(42, 181, 228), rgb(188, 219, 230), rgb(42, 181, 228));
+            }
+            a:link, a:visited {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+            }
+            button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+            button:hover, button:active {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+         <div><br>
+                You have been logged out !!! <a href="{% url 'login' %}">Login Again</a>
+            </div>        
+    </body>
+</html>

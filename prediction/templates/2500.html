@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h2>THIS IS YOUR DIET PLAN</h2>
+    <style>
+      body {
+        height: 700px;
+    }
+    a:link, a:visited {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:'Table Normal';
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Mangal;
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+</style>
+</head>
+<body>
+    <div align='right'>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+<div class=3DWordSection1>
+
+<table class=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D0
+ style=3D'width:585.0pt;margin-left:-27.25pt;border-collapse:collapse;mso-yfti-tbllook:
+ 1184'>
+ <tr style=3D'mso-yfti-irow:0;mso-yfti-firstrow:yes;height:55.35pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'></td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>BREAKFAST</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>LUNCH</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:.75pt .75pt .75pt .75pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>SNACK<o:p></o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>DINNER</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:1;height:137.65pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:137.65pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>MONDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:137.65pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Cereal
+  (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Apple<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Whole
+  milk 1 cup</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:137.65pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Peas
+  (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Paneer/Chicken
+  (white, no skin) 1 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Butter 1 tsp</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:137.65pt'>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Beans (cooked or canned) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Banana (medium) ½<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:137.65pt'>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Corn (cooked) ½ cup <o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Eggs 1<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Beets<o:p></o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:0cm;margin-right:7.0pt;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt'><span lang=3DEN-US>(A serving is ½
+  cup of cooked vegetables or 1 cup of raw vegetables)</span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:0cm;margin-right:7.0pt;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt'><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-left:0cm'><span lang=3DEN-US>Butter 1 tsp</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:2;height:52.45pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>TUESDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Beans
+  (cooked or canned) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Banana (medium) ½<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Whole
+  milk 1 cup<o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Corn
+  (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  color:black;mso-themecolor:text1'>1 bowl of chana or chicken<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Buttermilk</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Pasta
+  (cooked) ½<span style=3D'letter-spacing:-.1pt'> </span>cup<o:p></o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:0cm;margin-right:36.25pt;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:100%'><span lang=3DEN-US
+  style=3D'font-size:11.0pt;line-height:100%'>Grapes 12-15<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Corn
+  on the cob(sweetcorn) 1<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Chicken/fish/paneer<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Broccoli<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;lin=
+e-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Nuts or
+  seeds 1 Tbsp</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:3;height:55.35pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>WEDNESDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Rice
+  (cooked) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Apple<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Whole
+  milk 1 cup<o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Potato
+  1 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>1
+  bowl of dal<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Cream
+  cheese 1 Tbsp</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:
+  "Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Bread
+  (slice or roll)<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Raisins
+  2 Tbsp</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Sweet
+  potato ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>paneer/curd.<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Cabbage<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Cream
+  cheese 1 Tbsp<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:4;height:52.45pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>THURSDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Bread
+  (slice or roll)<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Yogurt<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:.05pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:13.75pt;mso-line-height-rule:
+  exactly'><span lang=3DEN-US style=3D'font-size:11.0pt'>Apple, orange or
+  grapefruit juice ½ cup<o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Green
+  banana(cooked)<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>1
+  bowl of dal or chicken and curd.<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Buttermilk</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Cereal
+  (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:.05pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:13.75pt;mso-line-height-rule:
+  exactly'><span lang=3DEN-US style=3D'font-size:11.0pt'>Apple, orange or
+  grapefruit juice ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Peas
+  (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>low-fat
+  paneer (50 gm)/1 bowl of curd. / chicken<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Mushrooms<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-left:0cm;line-height:13.75pt;mso-line-height-rule:
+  exactly'><span lang=3DEN-US>Butter 1 tsp</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:5;height:55.35pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>FRIDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;lin=
+e-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Pasta
+  (cooked) ½<span style=3D'letter-spacing:-.1pt'> </span>cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Buttermilk<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Canned
+  fruit in juice ½ cup</span><span lang=3DEN-US style=3D'font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Rice
+  (cooked) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Fish/salad
+  and 1 bowl of chana<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Yogurt
+  (non­fat, plain)</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:
+  "Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Beans (cooked or canned) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Apple<o:p></o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.35pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Beans (cooked or canned) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Chicken/</span><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'> </span><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>paneer/curd.<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Carrots<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Nuts or
+  seeds 1 Tbsp</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:6;height:52.45pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>SATURDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Cereal (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Banana (medium) ½<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Whole
+  milk 1 cup<o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Corn (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Paneer/Chicken
+  (white, no skin) 1 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Buttermilk<o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Rice
+  (cooked) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:.15pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:13.75pt;mso-line-height-rule:
+  exactly'><span lang=3DEN-US style=3D'font-size:11.0pt'>Dried fruit ¼ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Corn on the cob(sweetcorn) 1<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Chicken/fish/paneer<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Beets<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'>Butter 1 tsp<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:7;mso-yfti-lastrow:yes;height:52.45pt'>
+  <td width=3D107 valign=3Dtop style=3D'width:68.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>SUNDAY</span><span
+  lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D152 valign=3Dtop style=3D'width:116.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Beans
+  (cooked or canned) 1/3 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Apple<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Whole
+  milk 1 cup<o:p></o:p></span></p>
+  </td>
+  <td width=3D170 valign=3Dtop style=3D'width:130.15pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Peas
+  (cooked) ½ cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Paneer/Chicken
+  (white, no skin) 1 cup<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Whole
+  milk 1 cup</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=3D174 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:.75pt .75pt .75pt .75pt;height:52.45pt'>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Pasta
+  (cooked) ½<span style=3D'letter-spacing:-.1pt'> </span>cup<o:p></o:p></span></p>
+  <p class=3DMsoBodyText style=3D'margin-top:0cm;margin-right:36.25pt;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:100%'><span lang=3DEN-US
+  style=3D'font-size:11.0pt;line-height:100%'>Grapes 12­15<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D177 valign=3Dtop style=3D'width:134.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:52.45pt'>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Corn (cooked) ½ cup <o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'line-height:normal'><span lang=3DEN-US
+  style=3D'font-family:"Times New Roman",serif'>Eggs 1<o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Greens<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'>Nuts or
+  seeds 1 Tbsp</span><span lang=3DEN-US style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=3DMsoNormal><span lang=3DEN-US style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+</html>

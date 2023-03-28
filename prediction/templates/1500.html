@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h2>THIS IS YOUR DIET PLAN</h2>
+    <style>
+      body {
+        height: 700px;
+        background-image: linear-gradient(rgb(42, 181, 228), rgb(188, 219, 230), rgb(42, 181, 228));
+    }
+    a:link, a:visited {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-IN;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-IN;}
+</style>
+
+</head>
+<body>
+    <div align='right'>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+<div class=3DWordSection1>
+
+<p class=3DMsoNormal><span lang=3DEN-IN><o:p>&nbsp;</o:p></span></p>
+
+<table class=3DMsoTableGrid border=3D1 cellspacing=3D0 cellpadding=3D0 widt
+h=3D"100%"
+ style=3D'width:100.0%;border-collapse:collapse;border:none;mso-border-alt:
+solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style=3D'mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>BREAKFAST</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border:solid windowtex
+t 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>SNACK</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>LUNCH</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border:solid window
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>SNACK</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>DINNER </span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>SNACK</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:1'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>MONDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight),<span style=3D'mso-spacerun:yes'>  </span>1 vegetable stuffed
+  chapati/roti, and a cup of tea or coffee or low-fat milk.</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like<span
+  style=3D'mso-spacerun:yes'>  </span>apple, pear, orange/sweet lime, guava
+)</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>3 medium sized multigrain <span class=3DGramE>
+chapatis
+  ,vegetables</span>, <span style=3D'mso-spacerun:yes'> </span>and 1 bowl d
+al or
+  chicken and curd .</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 chapatis and 2 bowls of vegetables and salad
+.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:2'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>TUESDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight), vegetable oats, and a cup of tea or coffee or low-fat milk.</
+span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like<span
+  style=3D'mso-spacerun:yes'>  </span>apple, pear, orange/sweet lime, guava
+)</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>3 medium sized chapatis (50% ragi) with vegeta
+ble
+  salad and low-fat paneer/curd</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 chapatis and mixed vegetables and salad with
+ 1
+  bowl of fish/dal.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:3'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>WEDNESDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight), 2-egg whites with 1 whole wheat toast with grilled vegetable
+     <span style=3D'mso-spacerun:yes'>  </span>and a cup of tea or coffee or low-fat
+ milk.</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like<span
+  style=3D'mso-spacerun:yes'>  </span>apple, pear, orange/sweet lime, guava
+)</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>3 medium <span class=3DGramE>sized<span
+  style=3D'mso-spacerun:yes'>  </span>chapatis</span> (50% jowar) with vege
+table
+  salad and low-fat paneer/chicken (70 gm).</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 chapatis (50% jowar) and vegetables and sala
+d with
+  1 bowl of fish/dal.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:4'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>THURSDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight, milk with oats or <span class=3DSpellE>dalia</span> and a cup
+of tea
+  or coffee or low-fat milk.</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like<span
+  style=3D'mso-spacerun:yes'>  </span>apple, pear, orange/sweet lime, guava
+)</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>3 medium sized chapatis (50% ragi) with vegeta
+ble
+  salad and low-fat paneer/curd.</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 <span class=3DSpellE>beasan</span> <span
+  class=3DSpellE>cheela</span> with vegetables and salad with 1 bowl chicke
+n/dal.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:5'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>FRIDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight), <span class=3DSpellE>idli</span>/<span class=3DSpellE>poha</s
+pan>/<span
+  class=3DSpellE>upma</span><span style=3D'mso-spacerun:yes'>  </span>and a
+ cup of
+  tea or coffee or low-fat milk.</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like<span
+  style=3D'mso-spacerun:yes'>  </span>apple, pear, orange/sweet lime, guava
+)</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>3 medium sized chapatis (50% chana) <span
+  class=3DGramE>with<span style=3D'mso-spacerun:yes'>  </span>mixed</span>
+  vegetables,<span style=3D'mso-spacerun:yes'>  </span>salad and low-fat pa
+neer
+  (70 gm) /curd.</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 chapatis (50% jowar) and vegetables and sala
+d with
+  1 bowl of fish/dal.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:6'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>SATURDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight), whole wheat sandwich / chicken sandwich and a cup of tea or
+  coffee or low-fat milk.</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like<span
+  style=3D'mso-spacerun:yes'>  </span>apple, pear, orange/sweet lime, guava
+)</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>3 medium sized chapatis (knead with any green
+leafy <span
+  class=3DGramE>vegetable )</span>, vegetable salad and 1 bowl of sprout or
+ 1 egg
+  white curry.</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.<b><o:p></o:p></b></span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 chapatis (50% jowar) and vegetables and sala
+d with
+  1 bowl of fish/dal.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.98%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>SUNDAY</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.82%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 tsp fenugreek <span class=3DGramE>seeds(</sp
+an>soaked
+  overnight, moong dal<span style=3D'mso-spacerun:yes'>  </span><span
+  class=3DSpellE>cheela</span> with vegetables or stuffed multi grain chapa
+ti ,
+  and a cup of tea or coffee or low-fat milk.</span></p>
+  </td>
+  <td width=3D"6%" valign=3Dtop style=3D'width:6.52%;border-top:none;border
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 fruit (low-glycaemic fruits like <span
+  style=3D'mso-spacerun:yes'> </span>apple, pear, orange/sweet lime, guava)
+</span></p>
+  </td>
+  <td width=3D"18%" valign=3Dtop style=3D'width:18.72%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 ½ cup of brown rice, vegetable salad and 1
+         <span
+  class=3DGramE>½ <span style=3D'mso-spacerun:yes'> </span>bowl</span> of c
+hana/
+  chicken.</span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.62%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>1 cup lemon tea without sugar/honey and ¼ cup
+  roasted chana.</span></p>
+  </td>
+  <td width=3D"13%" valign=3Dtop style=3D'width:13.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>2 <span class=3DGramE>chapatis <span
+  style=3D'mso-spacerun:yes'> </span>with</span> mixed vegetables and salad
+ and 1
+  bowl dal/fish.</span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.68%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN>½ cup milk without sugar and 4 soaked almonds.
+</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=3DMsoNormal><span lang=3DEN-IN><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>LOGIN PAGE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+        <style>
+            body {
+                height: 700px;
+                background-image: linear-gradient(rgb(42, 181, 228), rgb(188, 219, 230), rgb(42, 181, 228));
+            }
+            .w3-panel{
+            background-color:rgb(141, 206, 228);
+            opacity:0.8;
+            top: 140px;
+            left: 350px;
+            width: 650px;
+            margin-top: 200px;
+        }
+            a:link, a:visited {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+            }
+            button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+            button:hover, button:active {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center" >
+        <div class="w3-panel w3-card">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{message.tags}}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <form method = "POST">
+                {% csrf_token %}
+                {{form|crispy}}
+                <div>
+                    <br>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div><br>
+                <h4>Need an account ?</h4><a href="{% url 'register' %}">Sign Up Here</a>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h2>THIS IS YOUR DIET PLAN</h2>
+   <style>
+     body {
+        height: 700px;
+    }
+    a:link, a:visited {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-IN;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-IN;}
+</style>
+
+<body>
+    <div align='right'>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+<div class=3DWordSection1>
+
+<p class=3DMsoNormal><span lang=3DEN-IN style=3D'font-size:12.0pt;line-heig
+ht:107%;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<table class=3DMsoTableGrid border=3D1 cellspacing=3D0 cellpadding=3D0 widt
+h=3D"100%"
+ style=3D'width:100.0%;border-collapse:collapse;border:none;mso-border-alt:
+solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style=3D'mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>BREAKFAST<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>SNACK<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>LUNCH<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border:solid windowte
+xt 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>SNACK<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border:solid windowt
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>DINNER
+  <o:p></o:p></span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border:solid windowte
+xt 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>SNACK<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:1'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>MONDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight),<span
+  style=3D'mso-spacerun:yes'>  </span>1 vegetable stuffed chapati/roti, and
+ a cup
+  of tea or coffee or low-fat milk and dry fruits.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>3 medium sized multigrain <span class=3DGramE>chapatis ,vegetables</span>,<span
+  style=3D'mso-spacerun:yes'>  </span>and 1 bowl dal or chicken and curd an
+d ½
+  cup rice .<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<o:p></o:p></sp
+an></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  chapatis and 2 bowls of vegetables and salad and 1 bowl rice.<o:p></o:p><
+/span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:2'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>TUESDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight), vegetab
+le
+  oats, and a cup of tea or coffee or low-fat milk and dry fruits.<o:p></o:
+p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>3
+  medium sized chapatis (50% ragi) with vegetable salad and low-fat paneer/
+curd
+  and ½ cup rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<o:p></o:p></sp
+an></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  chapatis and mixed vegetables and salad with 1 bowl of fish/dal and 1 bowl
+  rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:3'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>WEDNESDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight), 2-egg w
+hites
+  with 1 whole wheat toast with grilled vegetable<span
+  style=3D'mso-spacerun:yes'>  </span>and a cup of tea or coffee or low-fat
+ milk
+  and <span class=3DSpellE>dryfruits</span>.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>3
+  medium <span class=3DGramE>sized<span style=3D'mso-spacerun:yes'> 
+  </span>chapatis</span> (50% jowar) with vegetable salad and low-fat
+  paneer/chicken (70 gm) and ½ cup rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<o:p></o:p></sp
+an></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  chapatis (50% jowar) and vegetables and salad with 1 bowl of fish/dal and
+ 1
+  bowl rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:4'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>THURSDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight, milk wit
+h oats
+  or <span class=3DSpellE>dalia</span> and a cup of tea or coffee or low-fa
+t milk
+  and <span class=3DSpellE>dryfruits</span>.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>3
+  medium sized chapatis (50% ragi) with vegetable salad and low-fat paneer/
+curd
+  and ½ cup rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<o:p></o:p></sp
+an></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  <span class=3DSpellE>beasan</span> <span class=3DSpellE>cheela</span> with
+  vegetables and salad with 1 bowl chicken/dal and 1 bowl rice.<o:p></o:p><
+/span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:5'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>FRIDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight), <span
+  class=3DSpellE>idli</span>/<span class=3DSpellE>poha</span>/<span class
+=3DSpellE>upma</span><span
+  style=3D'mso-spacerun:yes'>  </span>and a cup of tea or coffee or low-fat
+ milk
+  and <span class=3DSpellE>dryfruits</span>.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>3
+  medium sized chapatis (50% chana) <span class=3DGramE>with<span
+  style=3D'mso-spacerun:yes'>  </span>mixed</span> vegetables,<span
+  style=3D'mso-spacerun:yes'>  </span>salad and low-fat paneer (70 gm) /cur
+d and
+  ½ cup rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<o:p></o:p></sp
+an></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  chapatis (50% jowar) and vegetables and salad with 1 bowl of fish/dal and
+ 1
+  bowl rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:6'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>SATURDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight), whole w
+heat
+  sandwich / chicken sandwich and a cup of tea or coffee or low-fat milk an
+d <span
+  class=3DSpellE>dryfruits</span>.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>3
+  medium sized chapatis (knead with any green leafy <span class=3DGramE>veg
+etable
+  )</span>, vegetable salad and 1 bowl of sprout or 1 egg white curry and ½
+ cup
+  rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<b><o:p></o:p><
+/b></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  chapatis (50% jowar) and vegetables and salad with 1 bowl of fish/dal and
+ 1
+  bowl rice.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.82%;border:solid windowt
+ext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>SUNDAY<o:p></o:p></span></p>
+  </td>
+  <td width=3D"14%" valign=3Dtop style=3D'width:14.92%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  tsp fenugreek <span class=3DGramE>seeds(</span>soaked overnight, moong da
+l<span
+  style=3D'mso-spacerun:yes'>  </span><span class=3DSpellE>cheela</span> wi
+th
+  vegetables or stuffed multi grain chapati , and a cup of tea or coffee or
+  low-fat milk and dryfruits.<o:p></o:p></span></p>
+  </td>
+  <td width=3D"19%" valign=3Dtop style=3D'width:19.42%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  fruit (apple, pear, orange / sweet lime, guava) and 1 cup moong/<span
+  class=3DSpellE>matki</span>/<span class=3DSpellE>chana</span> mix or
+  boiled/scrambled egg<o:p></o:p></span></p>
+  </td>
+  <td width=3D"15%" valign=3Dtop style=3D'width:15.48%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  cups of brown rice, vegetable salad and 1 <span class=3DGramE>½<span
+  style=3D'mso-spacerun:yes'>  </span>bowl</span> of chana/ chicken .<o:p><
+/o:p></span></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.9%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>1
+  cup lemon tea without sugar/honey and ¼ cup roasted chana.<o:p></o:p></sp
+an></p>
+  </td>
+  <td width=3D"12%" valign=3Dtop style=3D'width:12.46%;border-top:none;bord
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>2
+  <span class=3DGramE>chapatis<span style=3D'mso-spacerun:yes'>  </span>wit
+h</span>
+  mixed vegetables and salad and 1 bowl dal/fish and 1 bowl rice.<o:p></o:p
+></span></p>
+  </td>
+  <td width=3D"10%" valign=3Dtop style=3D'width:10.0%;border-top:none;borde
+r-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:0in;margin-bottom:.0001pt;lin
+e-height:
+  normal'><span lang=3DEN-IN style=3D'font-size:12.0pt;font-family:"Arial",
+sans-serif'>½
+  cup milk without sugar and 4 soaked almonds.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=3DMsoNormal><span lang=3DEN-IN style=3D'font-size:12.0pt;line-heig
+ht:107%;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+
+</head>
+
+
+</body>
+</html>

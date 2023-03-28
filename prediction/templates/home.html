@@ -1,0 +1,110 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <style type = text/css>
+    body {
+        height: 700px;
+        background-image: linear-gradient(rgb(42, 181, 228), rgb(188, 219, 230), rgb(42, 181, 228));
+    }
+    div{
+        color:black;
+    }
+    h1{
+        color:'white';
+        font-family:arial, sans-serif;
+        font-size:50px;
+        font-weight:bold;
+        margin-top:200px;
+    }
+    h2{
+        color:'white';
+        font-family:arial, sans-serif;
+        font-size:15px;
+        font-weight:bold;
+        margin-top:400px;
+    }
+    button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+    button:hover, button:active {
+        background-color: red;
+    }
+    a:link, a:visited {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+    a:hover, a:active {
+    background-color: red;
+    }
+    p {
+        font-size: larger;
+    }
+    </style>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{message.tags}}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}   
+    
+    <div class="container-fluid" align='right'>
+        {% if user.is_authenticated %}
+            <div class="">
+                <p>Welcome {{ user.username }}</p>
+            </div>
+            <a href="{% url 'logout' %}">Logout</a>
+            <div align='center'>
+                <h1>
+                    WELCOME TO DIABETES PREDICTION SYSTEM
+                </h1>        
+            </div>
+            <div align='center'>
+                <p>Your diabetes mellitus result is: {{ request.user.profile.pred_result }}</p>
+                <p>Your daily calorie requirement is: {{ request.user.profile.cal_req }}</p>
+                <br>
+                <a href="{% url 'prediction-form' %}">Predict</a>
+                <a href="{% url 'diet-page' %}">Calculate Diet</a>            
+                <a href="{% url 'diet-chart' %}">Your Diet Chart</a>
+            </div>
+
+        {% else %}
+        <div align='right'>
+            <p>
+                <a href="{% url 'login' %}">Login</a> 
+                <a href="{% url 'register' %}">Register</a>
+            </p>
+            <div align='center'>
+                <h1>
+                    WELCOME TO DIABETES PREDICTION SYSTEM
+                </h1>        
+            </div>
+        </div>   
+        {% endif %}
+    </div>
+</body>
+</html>

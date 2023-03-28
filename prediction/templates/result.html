@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            body {
+            height: 700px;
+            background-image: linear-gradient(rgb(42, 181, 228), rgb(188, 219, 230), rgb(42, 181, 228));    
+            color : black(255, 0, 0);
+            background-size:cover;
+        }
+            a:link, a:visited {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+            a:hover, a:active {
+            background-color: red;
+            }
+            button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+            button:hover, button:active {
+                background-color: red;
+            }
+        </style>
+    </head>
+        <body>
+            <h4>You entered following values:</h4><br>
+            Age : {{ age }}<br>
+            Gender : {{gender}}<br>
+            Family History : {{family_history}}<br>
+            Physical Activity : {{physical_activity}}<br>
+            BMI : {{bmi}}<br>
+            Smoking : {{smoking}}<br>
+            Alcohol : {{alcohol}}<br>
+            Sleep Hours : {{sleep_hours}}<br>
+            Regular Medicine : {{regular_medicine}}<br>
+            Junkfood : {{junkfood}}<br>
+            Stress : {{stress}}<br>
+            Blood Pressure Level : {{blood_pressure_level}}<br>
+            Pregnancies : {{pregnancies}}<br>
+            Urination Frequency : {{urination_frequency}}<br>
+
+            <h4>Your Diabetes Mellitus prediction result is : {{ request.user.profile.pred_result }}</h4>
+
+            <h4>Don't Panic!! We have a diet plan for you to control your diabetes!</h4>
+            <form action = "diet">
+                <button type="submit" name="submit">Diet Plan</button>
+            </form>
+        </body>
+</html>
